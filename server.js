@@ -3,8 +3,6 @@ const { connectDb } = require("./db/database")
 
 connectDb();
 
-console.log(process.env.PORT);
-
-app.listen(4000, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log("Server is running at 4000");
 })
